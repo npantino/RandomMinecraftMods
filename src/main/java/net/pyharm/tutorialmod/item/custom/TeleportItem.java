@@ -20,6 +20,7 @@ public class TeleportItem extends Item {
         if (!level.isClientSide() && hand == InteractionHand.MAIN_HAND) {
             Vec3 finalPos = getEndVec(player, 8);
             player.teleportTo(finalPos.x, finalPos.y, finalPos.z);
+            player.resetFallDistance();
             player.getCooldowns().addCooldown(this, 3);
         }
         return super.use(level, player, hand);
