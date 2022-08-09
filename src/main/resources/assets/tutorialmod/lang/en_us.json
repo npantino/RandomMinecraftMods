@@ -1,0 +1,18 @@
+{
+  "item.tutorialmod.zircon": "Zircon",
+  "item.tutorialmod.raw_zircon": "Raw Zircon",
+  "item.tutorialmod.jade_ingot": "Jade Ingot",
+
+  "block.tutorialmod.zircon_block": "Block of Zircon",
+  "block.tutorialmod.zircon_ore": "Zircon Ore",
+  "block.tutorialmod.deepslate_zircon_ore": "Deepslate Zircon Ore",
+
+  "item.tutorialmod.jade_sword": "Jade Sword",
+
+  "item.tutorialmod.explosive_arrow": "Explosive Arrow",
+
+  "item.tutorialmod.dice": "Dice",
+  "item.tutorialmod.teleport": "Teleport",
+
+  "itemGroup.tutorialtab": "Zircon Tutorial Tab"
+}
