@@ -8,10 +8,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.pyharm.tutorialmod.TutorialMod;
-import net.pyharm.tutorialmod.item.custom.AncientBowItem;
-import net.pyharm.tutorialmod.item.custom.DiceItem;
-import net.pyharm.tutorialmod.item.custom.ExplosiveArrowItem;
-import net.pyharm.tutorialmod.item.custom.TeleportItem;
+import net.pyharm.tutorialmod.item.custom.*;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, TutorialMod.MOD_ID);
@@ -40,6 +37,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> TELEPORT = ITEMS.register("teleport",
             () -> new TeleportItem(new Item.Properties().tab(ModCreativeModTab.TUTORIAL_TAB).stacksTo(1)));
+
+    public static final RegistryObject<Item> GRENADE = ITEMS.register("grenade",
+            () -> new GrenadeItem(new Item.Properties().tab(ModCreativeModTab.TUTORIAL_TAB).stacksTo(16)));
 
     public static void register(IEventBus eventbus) {
         ITEMS.register(eventbus);

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " SQ",
+    "SND",
+    " SQ"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "N": {
+      "item": "minecraft:nether_star"
+    },
+    "Q": {
+      "item": "minecraft:quartz"
+    },
+    ,
+    "D": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "tutorialmod:ancient_bow"
+  }
+}

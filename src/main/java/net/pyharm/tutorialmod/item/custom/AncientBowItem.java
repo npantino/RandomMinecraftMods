@@ -41,12 +41,15 @@ public class AncientBowItem extends BowItem {
                         ArrowItem arrowitem = (ArrowItem)(itemstack.getItem() instanceof ArrowItem ? itemstack.getItem() : Items.ARROW);
                         AbstractArrow abstractarrow = arrowitem.createArrow(p_40668_, itemstack, player);
                         abstractarrow = customArrow(abstractarrow);
-                        abstractarrow.shootFromRotation(player, player.getXRot(), player.getYRot(), 0.0F, f * 6.0F, 2.0F);
+                        abstractarrow.shootFromRotation(player, player.getXRot(), player.getYRot(), 0.0F, f * 3.0F, 1.0F);
                         if (f == 1.0F) {
                             abstractarrow.setCritArrow(true);
+                            abstractarrow.setNoGravity(true);
                         }
 
-                        abstractarrow.setBaseDamage(abstractarrow.getBaseDamage() * 3D);
+                        abstractarrow.setBaseDamage(abstractarrow.getBaseDamage() * 2.5D);
+                        abstractarrow.setPierceLevel((byte) 4);
+                        abstractarrow.flyDist = 1500f;
 
                         int j = EnchantmentHelper.getItemEnchantmentLevel(Enchantments.POWER_ARROWS, p_40667_);
                         if (j > 0) {

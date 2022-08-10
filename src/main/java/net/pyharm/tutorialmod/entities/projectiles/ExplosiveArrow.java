@@ -39,12 +39,12 @@ public class ExplosiveArrow extends AbstractArrow {
     @Override
     protected void onHitEntity(EntityHitResult hit) {
         super.onHitEntity(hit);
-        this.level.explode(this, this.getX(), this.getY(), this.getZ(), 4.0f, true, Explosion.BlockInteraction.BREAK);
+        this.level.explode(this, this.getX(), this.getY(), this.getZ(), 2.7f, true, Explosion.BlockInteraction.BREAK);
     }
 
     @Override
     protected void onHitBlock(BlockHitResult hit) {
         super.onHitBlock(hit);
-        this.level.explode(this, this.getX(), this.getY(), this.getZ(), 4.0f, true, Explosion.BlockInteraction.BREAK);
+        this.level.explode(this, this.getX(), this.getY(), this.getZ(), 2.7f, true, Explosion.BlockInteraction.BREAK);
     }
 }

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "TTT",
+    "TAT",
+    "TTT"
+  ],
+  "key": {
+    "T": {
+      "item": "minecraft:tnt"
+    },
+    "A": {
+      "item": "minecraft:arrow"
+    }
+  },
+  "result": {
+    "item": "tutorialmod:explosive_arrow"
+  }
+}

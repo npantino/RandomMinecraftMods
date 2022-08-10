@@ -13,8 +13,10 @@
 
   "item.tutorialmod.explosive_arrow": "Explosive Arrow",
 
+  "item.tutorialmod.grenade": "Grenade",
+
   "item.tutorialmod.dice": "Dice",
   "item.tutorialmod.teleport": "Teleport",
 
-  "itemGroup.tutorialtab": "Zircon Tutorial Tab"
+  "itemGroup.tutorialtab": "Mod Tab"
 }
