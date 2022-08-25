@@ -20,8 +20,7 @@ public class ExplosiveArrow extends AbstractArrow {
     private final Item referenceItem;
     private int life;
     public ExplosiveArrow(EntityType<ExplosiveArrow> entityType, Level level) {
-        super(entityType, level);
-        this.setCritArrow(true);
+        super(entityType, level);;
         this.referenceItem = ModItems.EXPLOSIVE_ARROW.get();
     }
 
@@ -29,7 +28,6 @@ public class ExplosiveArrow extends AbstractArrow {
         super(EntityInit.EXPLOSIVE_ARROW.get(), shooter, level);
         this.referenceItem = referenceItem;
     }
-
 
     @Override
     public ItemStack getPickupItem() {
@@ -39,12 +37,13 @@ public class ExplosiveArrow extends AbstractArrow {
     @Override
     protected void onHitEntity(EntityHitResult hit) {
         super.onHitEntity(hit);
-        this.level.explode(this, this.getX(), this.getY(), this.getZ(), 2.7f, true, Explosion.BlockInteraction.BREAK);
+        this.level.explode(this, this.getX(), this.getY(), this.getZ(), 2f, true, Explosion.BlockInteraction.BREAK);
+
     }
 
     @Override
     protected void onHitBlock(BlockHitResult hit) {
         super.onHitBlock(hit);
-        this.level.explode(this, this.getX(), this.getY(), this.getZ(), 2.7f, true, Explosion.BlockInteraction.BREAK);
+        this.level.explode(this, this.getX(), this.getY(), this.getZ(), 2f, true, Explosion.BlockInteraction.BREAK);
     }
 }

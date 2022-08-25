@@ -15,4 +15,6 @@ public class ClientModEventSubscriber {
     public static void onClientSetup(EntityRenderersEvent.RegisterRenderers event) {
         event.registerEntityRenderer(EntityInit.EXPLOSIVE_ARROW.get(), ExplosiveArrowRenderer::new);
     }
+
+
 }

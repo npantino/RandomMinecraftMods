@@ -29,12 +29,12 @@ public class Grenade extends Snowball {
     protected void onHitEntity(EntityHitResult hit) {
         super.onHitEntity(hit);
 
-        this.level.explode(this, this.getX(), this.getY(), this.getZ(), 2.2f, true, Explosion.BlockInteraction.BREAK);
+        this.level.explode(this, this.getX(), this.getY(), this.getZ(), 2.5f, false, Explosion.BlockInteraction.NONE);
     }
 
     @Override
     protected void onHit(HitResult hit) {
         super.onHit(hit);
-        this.level.explode(this, this.getX(), this.getY(), this.getZ(), 1.0f, true, Explosion.BlockInteraction.BREAK);
+        this.level.explode(this, this.getX(), this.getY(), this.getZ(), 2.5f, false, Explosion.BlockInteraction.NONE);
     }
 }
